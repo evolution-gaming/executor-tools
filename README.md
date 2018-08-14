@@ -18,5 +18,5 @@ To get `ExecutionContextExecutorService` out of `ExecutionContext`
 ```scala
 resolvers += Resolver.bintrayRepo("evolutiongaming", "maven")
 
-libraryDependencies += "com.evolutiongaming" %% "executor-tools" % "1.0.0"
+libraryDependencies += "com.evolutiongaming" %% "executor-tools" % "1.0.1"
 ```
