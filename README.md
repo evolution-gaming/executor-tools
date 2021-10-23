@@ -1,4 +1,8 @@
-# executor-tools [![Build Status](https://travis-ci.org/evolution-gaming/executor-tools.svg)](https://travis-ci.org/evolution-gaming/executor-tools) [ ![version](https://api.bintray.com/packages/evolutiongaming/maven/executor-tools/images/download.svg) ](https://bintray.com/evolutiongaming/maven/executor-tools/_latestVersion)
+# executor-tools
+[![Build Status](https://github.com/evolution-gaming/executor-tools/workflows/CI/badge.svg)](https://github.com/evolution-gaming/executor-tools/actions?query=workflow%3ACI)
+[![Coverage Status](https://coveralls.io/repos/evolution-gaming/executor-tools/badge.svg)](https://coveralls.io/r/evolution-gaming/executor-tools)
+[![Version](https://img.shields.io/badge/version-click-blue)](https://evolution.jfrog.io/artifactory/api/search/latestVersion?g=com.evolutiongaming&a=executor-tools-actor_2.13&repos=public)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellowgreen.svg)](https://opensource.org/licenses/MIT)
 
 This micro dependency-free library contains a couple of simple classes we've annoyed to create in every project.
 Akka has own, Play has own, other libraries has own of these...
