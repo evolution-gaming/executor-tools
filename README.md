@@ -20,7 +20,7 @@ To get `ExecutionContextExecutorService` out of `ExecutionContext`
 ## Setup
 
 ```scala
-resolvers += Resolver.bintrayRepo("evolutiongaming", "maven")
+addSbtPlugin("com.evolution" % "sbt-artifactory-plugin" % "0.0.2")
 
-libraryDependencies += "com.evolutiongaming" %% "executor-tools" % "1.0.2"
+libraryDependencies += "com.evolutiongaming" %% "executor-tools" % "1.0.3"
 ```
