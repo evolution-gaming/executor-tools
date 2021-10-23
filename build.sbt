@@ -1,3 +1,4 @@
+
 name := "executor-tools"
 
 organization := "com.evolutiongaming"
@@ -6,18 +7,20 @@ homepage := Some(new URL("http://github.com/evolution-gaming/executor-tools"))
 
 startYear := Some(2017)
 
-organizationName := "Evolution Gaming"
+organizationName := "Evolution"
 
-organizationHomepage := Some(url("http://evolutiongaming.com"))
+organizationHomepage := Some(url("http://evolution.com"))
 
-bintrayOrganization := Some("evolutiongaming")
+publishTo := Some(Resolver.evolutionReleases)
 
 scalaVersion := crossScalaVersions.value.last
 
-crossScalaVersions := Seq("2.12.9", "2.13.3")
+crossScalaVersions := Seq("2.13.6", "2.12.15")
 
 Compile / doc / scalacOptions ++= Seq("-groups", "-implicits", "-no-link-warnings")
 
-licenses := Seq(("Apache-2.0", url("http://www.apache.org/licenses/LICENSE-2.0")))
+licenses := Seq(("MIT", url("https://opensource.org/licenses/MIT")))
 
 releaseCrossBuild := true
+
+scalacOptsFailOnWarn := Some(false)

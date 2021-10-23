@@ -1,9 +1,9 @@
-externalResolvers += Resolver.bintrayIvyRepo("evolutiongaming", "sbt-plugins")
+addSbtPlugin("org.scoverage" % "sbt-scoverage" % "1.9.0")
 
-addSbtPlugin("org.foundweekends" % "sbt-bintray" % "0.5.5")
+addSbtPlugin("org.scoverage" % "sbt-coveralls" % "1.3.1")
 
-addSbtPlugin("com.github.gseitz" % "sbt-release" % "1.0.11")
+addSbtPlugin("com.github.sbt" % "sbt-release" % "1.1.0")
 
-addSbtPlugin("com.evolutiongaming" % "sbt-scalac-opts-plugin" % "0.0.4")
+addSbtPlugin("com.evolution" % "sbt-scalac-opts-plugin" % "0.0.9")
 
-addSbtPlugin("org.scalameta" % "sbt-scalafmt" % "2.2.1")
+addSbtPlugin("com.evolution" % "sbt-artifactory-plugin" % "0.0.2")
