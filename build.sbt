@@ -15,7 +15,7 @@ publishTo := Some(Resolver.evolutionReleases)
 
 scalaVersion := crossScalaVersions.value.last
 
-crossScalaVersions := Seq("2.13.10", "2.12.17", "3.2.1")
+crossScalaVersions := Seq("2.13.12", "2.12.18", "3.3.1")
 
 Compile / doc / scalacOptions ++= Seq("-groups", "-implicits", "-no-link-warnings")
 
