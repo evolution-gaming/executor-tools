@@ -3,13 +3,13 @@ name := "executor-tools"
 
 organization := "com.evolutiongaming"
 
-homepage := Some(new URL("http://github.com/evolution-gaming/executor-tools"))
+homepage := Some(url("https://github.com/evolution-gaming/executor-tools"))
 
 startYear := Some(2017)
 
 organizationName := "Evolution"
 
-organizationHomepage := Some(url("http://evolution.com"))
+organizationHomepage := Some(url("https://evolution.com"))
 
 publishTo := Some(Resolver.evolutionReleases)
 
@@ -24,3 +24,7 @@ licenses := Seq(("MIT", url("https://opensource.org/licenses/MIT")))
 releaseCrossBuild := true
 
 scalacOptsFailOnWarn := Some(false)
+
+//addCommandAlias("check", "all versionPolicyCheck Compile/doc")
+addCommandAlias("check", "show version")
+addCommandAlias("build", "+all compile test")
