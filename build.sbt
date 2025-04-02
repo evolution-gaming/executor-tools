@@ -1,4 +1,3 @@
-
 name := "executor-tools"
 
 organization := "com.evolutiongaming"
@@ -13,18 +12,16 @@ organizationHomepage := Some(url("https://evolution.com"))
 
 publishTo := Some(Resolver.evolutionReleases)
 
+versionPolicyIntention := Compatibility.BinaryCompatible
+
 scalaVersion := crossScalaVersions.value.last
 
-crossScalaVersions := Seq("2.13.10", "2.12.17", "3.2.1")
+crossScalaVersions := Seq("2.13.16", "2.12.20", "3.3.5")
 
 Compile / doc / scalacOptions ++= Seq("-groups", "-implicits", "-no-link-warnings")
 
 licenses := Seq(("MIT", url("https://opensource.org/licenses/MIT")))
 
-releaseCrossBuild := true
-
-scalacOptsFailOnWarn := Some(false)
-
-//addCommandAlias("check", "all versionPolicyCheck Compile/doc")
-addCommandAlias("check", "show version")
+addCommandAlias("fmt", "all scalafmtAll scalafmtSbt")
+addCommandAlias("check", "all scalafmtCheckAll scalafmtSbtCheck; +all versionPolicyCheck Compile/doc")
 addCommandAlias("build", "+all compile test")
