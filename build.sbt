@@ -22,6 +22,7 @@ Compile / doc / scalacOptions ++= Seq("-groups", "-implicits", "-no-link-warning
 
 licenses := Seq(("MIT", url("https://opensource.org/licenses/MIT")))
 
-addCommandAlias("fmt", "all scalafmtAll scalafmtSbt")
-addCommandAlias("check", "all scalafmtCheckAll scalafmtSbtCheck; +all versionPolicyCheck Compile/doc")
+addCommandAlias("fmt", "+all scalafmtAll scalafmtSbt")
+// release.yml@v3 executes +check, no need to add + here
+addCommandAlias("check", "all scalafmtCheckAll scalafmtSbtCheck versionPolicyCheck Compile/doc")
 addCommandAlias("build", "+all compile test")
